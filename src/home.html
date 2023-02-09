@@ -1,115 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-	@@include('html/_head.htm',{
-	"title":"HomePage"
-	})
-	<body>
-		<div class="wrapper">
-			@@include('html/_header.htm',{})
-			<main class="page">
-				<section class="page__team team-page">
-					<div class="team-page__container">
-						<div class="team-page__inner">
-							<div class="team-page__subtitle subtitle">Meet the staff</div>
-							<h2 class="team-page__title title">Our Team</h2>
-							<div class="team-page__content">	
-								<div class="team-page__card card">
-									<!-- <div class="card__image"> -->
-									<img src="img/team/01.jpg" alt="">
-									<!-- </div> -->
-									<div class="card__block">
-										<div class="card__info">
-											<div class="card__name">Malavika Hegte</div>
-											<div class="card__speciality">Digital Marketer</div>
-										</div>
-										<div class="card__social">
-											<a href="" class="card__icon">
-												<img src="img/team/facebook.svg" alt="facebook">
-											</a>
-											<a href="" class="card__icon">
-												<img src="img/team/twitter.svg" alt="twitter">
-											</a>
-											<a href="" class="card__icon">
-												<img src="img/team/instagram.svg" alt="instagram">
-											</a>
-										</div>
-									</div>
-								</div>
-								<div class="team-page__card card">
-									<!-- <div class="card__image"> -->
-									<img src="img/team/02.jpg" alt="">
-									<!-- </div> -->
-									<div class="card__block">
-										<div class="card__info">
-											<div class="card__name">Choudri Malhotra</div>
-											<div class="card__speciality">UI Designer</div>
-										</div>
-										<div class="card__social">
-											<a href="" class="card__icon">
-												<img src="img/team/facebook.svg" alt="facebook">
-											</a>
-											<a href="" class="card__icon">
-												<img src="img/team/twitter.svg" alt="twitter">
-											</a>
-											<a href="" class="card__icon">
-												<img src="img/team/instagram.svg" alt="instagram">
-											</a>
-										</div>
-									</div>
-	
-								</div>
-								<div class="team-page__card card">
-									<!-- <div class="card__image"> -->
-									<img src="img/team/03.jpg" alt="">
-									<!-- </div> -->
-									<div class="card__block">
-										<div class="card__info">
-											<div class="card__name">Malavika Hegte</div>
-											<div class="card__speciality">Digital Marketer</div>
-										</div>
-										<div class="card__social">
-											<a href="" class="card__icon">
-												<img src="img/team/facebook.svg" alt="facebook">
-											</a>
-											<a href="" class="card__icon">
-												<img src="img/team/twitter.svg" alt="twitter">
-											</a>
-											<a href="" class="card__icon">
-												<img src="img/team/instagram.svg" alt="instagram">
-											</a>
-										</div>
-									</div>
-								</div>
-								<div class="team-page__card card">
-									<!-- <div class="card__image"> -->
-									<img src="img/team/04.jpg" alt="">
-									<!-- </div> -->
-									<div class="card__block">
-										<div class="card__info">
-											<div class="card__name">Anirudh Vedha</div>
-											<div class="card__speciality">Lead Developer</div>
-										</div>
-										<div class="card__social">
-											<a href="" class="card__icon">
-												<img src="img/team/facebook.svg" alt="facebook">
-											</a>
-											<a href="" class="card__icon">
-												<img src="img/team/twitter.svg" alt="twitter">
-											</a>
-											<a href="" class="card__icon">
-												<img src="img/team/instagram.svg" alt="instagram">
-											</a>
-										</div>
-									</div>
-								</div>
-	
-							</div>
-						</div>
-					</div>
-				</section>
-			</main>
-			@@include('html/_footer.htm',{})
-		</div>
-		@@include('html/_js.htm',{})
-	</body>
+  @@include('html/_head.htm',{ "title":"HomePage" })
+  <body>
+    <div class="wrapper">
+      @@include('html/_header.htm',{})
+      <main class="page">
+
+        <section class="page__portfolio portfolio-page">
+          <div class="portfolio-page__container">
+            <div class="portfolio-page__subtitle subtitle">
+              Our works
+            </div>
+            <div class="portfolio-page__title title">
+              Portfolio
+            </div>
+            <div class="portfolio-page__row">
+              <div class="portfolio-page__column">
+                <div class="portfolio-page__work">
+                  <img src="img/portfolio/01.jpg" alt="Image">
+                </div>
+              </div>
+              <div class="portfolio-page__column">
+                <div class="portfolio-page__work">
+                  <img src="img/portfolio/02.jpg" alt="Image">
+                </div>
+              </div>
+              <div class="portfolio-page__column">
+                <div class="portfolio-page__work">
+                  <img src="img/portfolio/03.jpg" alt="Image">
+                </div>
+              </div>
+              <div class="portfolio-page__column">
+                <div class="portfolio-page__work">
+                  <img src="img/portfolio/04.jpg" alt="Image">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="page__team team-page">
+          <div class="team-page__container">
+              <div class="team-page__subtitle subtitle">Meet the staff</div>
+              <h2 class="team-page__title title">Our Team</h2>
+              <div class="team-page__row">
+                <div class="team-page__column">
+                  <div class="team-page__item card">
+                    <div class="card__image">
+                      <img src="img/team/01.jpg" alt="Image">
+                    </div>
+                    <div class="card__body">
+                      <div class="card__info">
+                        <div class="card__name">Malavika Hegte</div>
+                        <div class="card__speciality">Digital Marketer</div>
+                      </div>
+                      <div class="card__social">
+                        <a href="" class="card__icon">
+                          <img src="img/team/facebook.svg" alt="facebook" />
+                        </a>
+                        <a href="" class="card__icon">
+                          <img src="img/team/twitter.svg" alt="twitter" />
+                        </a>
+                        <a href="" class="card__icon">
+                          <img src="img/team/instagram.svg" alt="instagram" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="team-page__column">
+                  <div class="team-page__item card">
+                    <div class="card__image">
+                      <img src="img/team/02.jpg" alt="Image">
+                    </div>
+                    <div class="card__body">
+                      <div class="card__info">
+                        <div class="card__name">Choudri Malhotra</div>
+                        <div class="card__speciality">UI Designer</div>
+                      </div>
+                      <div class="card__social">
+                        <a href="" class="card__icon">
+                          <img src="img/team/facebook.svg" alt="facebook" />
+                        </a>
+                        <a href="" class="card__icon">
+                          <img src="img/team/twitter.svg" alt="twitter" />
+                        </a>
+                        <a href="" class="card__icon">
+                          <img src="img/team/instagram.svg" alt="instagram" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="team-page__column">
+                  <div class="team-page__item card">
+                    <div class="card__image">
+                      <img src="img/team/03.jpg" alt="Image">
+                    </div>
+                    <div class="card__body">
+                      <div class="card__info">
+                        <div class="card__name">Malavika Hegte</div>
+                        <div class="card__speciality">Digital Marketer</div>
+                      </div>
+                      <div class="card__social">
+                        <a href="" class="card__icon">
+                          <img src="img/team/facebook.svg" alt="facebook" />
+                        </a>
+                        <a href="" class="card__icon">
+                          <img src="img/team/twitter.svg" alt="twitter" />
+                        </a>
+                        <a href="" class="card__icon">
+                          <img src="img/team/instagram.svg" alt="instagram" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="team-page__column">
+                  <div class="team-page__item card">
+                    <div class="card__image">
+                      <img src="img/team/04.jpg" alt="Image">
+                    </div>
+                    <div class="card__body">
+                      <div class="card__info">
+                        <div class="card__name">Anirudh Vedha</div>
+                        <div class="card__speciality">Lead Developer</div>
+                      </div>
+                      <div class="card__social">
+                        <a href="" class="card__icon">
+                          <img src="img/team/facebook.svg" alt="facebook" />
+                        </a>
+                        <a href="" class="card__icon">
+                          <img src="img/team/twitter.svg" alt="twitter" />
+                        </a>
+                        <a href="" class="card__icon">
+                          <img src="img/team/instagram.svg" alt="instagram" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>          
+        </section>
+
+      </main>
+      @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_js.htm',{})
+  </body>
 </html>

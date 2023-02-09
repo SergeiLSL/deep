@@ -1,3 +1,219 @@
 //====================================================================================================
-
+.page {
+	// .page__portfolio
+	&__portfolio {
+	}
+	// .page__team
+	&__team {
+	}
+}
 //====================================================================================================
+
+//========================================================================================================================================================
+//========================================================================================================================================================
+.portfolio-page {
+	padding-top: 5.748031%; /* 73/1270 */
+	padding-bottom: 6.850394%; /* 87/1270 */
+	// .portfolio-page__container
+	&__container {
+	}
+	// .portfolio-page__subtitle
+	&__subtitle {
+	}
+	// .portfolio-page__title
+	&__title {
+		&:not(:last-child) {
+			margin-bottom: 6.062992%; /* 77/1270 */
+		}
+	}
+	// .portfolio-page__row
+	&__row {
+		margin: 0 rem(-12);
+		display: flex;
+		flex-wrap: wrap;
+		row-gap: 24px;
+	}
+	// .portfolio-page__column
+	&__column {
+		flex: 0 1 25%;
+		padding: rem(0) rem(12);
+		@media (max-width:$tablet){
+			flex: 0 1 33.333%;
+		}
+		@media (max-width:$mobile){
+			flex: 0 1 50%;
+		}
+		@media (max-width:$mobileSmall){
+			flex: 0 1 100%;
+		}
+	}
+	// .portfolio-page__work
+	&__work {		
+		padding: 0px 0px 135% 0px;
+		overflow: hidden;
+		position: relative;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	}
+}
+//========================================================================================================================================================
+//========================================================================================================================================================
+.team-page {
+	padding-top: 5.748031%; /* 73/1270 */
+	padding-bottom: 6.850394%; /* 87/1270 */
+		// .team-page__container
+		&__container {
+		}
+		// .team-page__subtitle
+		&__subtitle {
+		}
+		// .team-page__title
+		&__title {
+			&:not(:last-child) {
+				margin-bottom: 6.062992%; /* 77/1270 */
+			}
+		}
+		// .team-page__row
+		&__row {
+			margin: 0 rem(-11.5);
+			display: flex;
+			flex-wrap: wrap;
+			row-gap: 23px;
+		}
+		// .team-page__column
+		&__column {
+			flex: 0 1 25%;
+			padding: rem(0) rem(11.5);
+			@media (max-width:$tablet){
+				flex: 0 1 33.333%;
+			}
+			@media (max-width:$mobile){
+				flex: 0 1 50%;
+			}
+			@media (max-width:$mobileSmall){
+				flex: 0 1 100%;
+			}
+		}
+		// .team-page__item
+		&__item {
+		}
+}
+
+.card {
+		// .card__image
+		&__image {
+			padding: 0px 0px 135% 0px;
+			overflow: hidden;
+			position: relative;
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+		}
+		// .card__body
+		&__body {
+			background: rgba(98, 87, 254, 0.8);
+			color: #fff;
+			display: flex;
+			align-items: center;
+			padding: rem(11) rem(13) rem(12) rem(18);
+			justify-content: space-between;
+			@media (max-width: rem(1200)){
+				padding: rem(11) rem(8) rem(12) rem(10);
+			}
+			@media (max-width: rem(1100)){
+				flex-direction: column;
+			}
+			@media (max-width: $mobile){
+				flex-direction: row;
+			}
+			@media (max-width: rem(600)){
+				flex-direction: column;
+			}
+			@media (max-width: $mobileSmall){
+				flex-direction: row;
+			}
+		}
+		// .card__info
+		&__info {
+		}
+		// .card__name
+		&__name {
+			font-size: rem(16);
+			line-height: 200%; /* 32/16 */
+			font-weight: 600;
+			@media (max-width: rem(1100)){
+				line-height: 110%; /* 32/16 */
+			}
+		}
+		// .card__speciality
+		&__speciality {
+			line-height: 228.571429%; /* 32/14 */
+			@media (max-width: rem(1100)){
+				margin-bottom: rem(7);
+			}
+		}
+		// .card__social
+		&__social {
+			display: flex;
+			gap: rem(11);
+		}
+		// .card__icon
+		&__icon {
+		}
+}
+
+
+//========================================================================================================================================================
+.cards {
+	margin: 0px 0 70px 0;
+}
+.cards__row{
+	margin: 0px -15px 70px -15px;
+	display: flex;
+	flex-wrap: wrap;
+	row-gap: 24px;
+}
+.cards__column {
+	flex: 0 1 33.333%;
+	padding: 0px 15px;
+	@media (max-width:$tablet){
+		flex: 0 1 50%;
+	}
+	@media (max-width:$mobile){
+		flex: 0 1 100%;
+	}
+}
+.cards__item {
+}
+
+/* Контейнер картинки */
+.cards__image {
+	margin: 0px 0px 20px 0px;
+	padding: 0px 0px 58% 0px;
+	overflow: hidden;
+	position: relative;
+}
+/* Картинка */
+.cards__image img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.cards__body {
+}
+//========================================================================================================================================================
+

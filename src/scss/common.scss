@@ -1,1 +1,19 @@
 // Заголовки, загальні БЕМ блоки та інше...
+
+.title {
+	font-family: 'Overpass';
+	font-style: normal;
+	font-weight: 700;
+	font-size: rem(56);
+	line-height: 126.785714%; /* 71/56 */
+	color: #100C46;
+	text-align: center;	
+}
+
+.subtitle {
+	font-size: rem(16);
+	line-height: 137.5%; /* 22/16 */
+	color: #6257FE;
+	text-align: center;
+	margin-bottom: rem(7);
+}
