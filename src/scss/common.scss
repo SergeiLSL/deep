@@ -17,3 +17,21 @@
 	text-align: center;
 	margin-bottom: rem(7);
 }
+
+.button {
+	display: inline-flex;
+	font-weight: 600;
+	font-size: rem(18);
+	line-height: 177.777778%; /* 32/18 */
+	color: #100C46;
+	padding: rem(19) rem(46);
+	background: #FFFFFF;
+	box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
+	border-radius: 3px;
+	cursor: pointer;
+	&_white {
+		color: #FFFFFF;
+		background: #6257FE;
+		box-shadow: 0px 10px 30px rgba(98, 87, 254, 0.3);
+	}
+}
