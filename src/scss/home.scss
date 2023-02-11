@@ -1,5 +1,11 @@
 //====================================================================================================
 .page {
+  // .page__about
+  &__about {
+  }
+  // .page__services
+  &__services {
+  }
   // .page__portfolio
   &__portfolio {
   }
@@ -7,13 +13,400 @@
   &__team {
   }
 }
+
 //====================================================================================================
 
 //========================================================================================================================================================
+
+// .about-page {
+//   padding-top: 50px;
+//   padding-bottom: 50px;
+//   max-height: 70.866142%; /* 900/1270 */
+//   // .about-page__inner
+//   &__inner {
+//     display: flex;
+//     height: 500px;
+//   }
+// }
+
+// .split {
+//   height: 100%;
+//   width: 50%;
+//   position: relative;
+//   z-index: 1;
+//   top: 0;
+//   overflow-x: hidden;
+//   padding-top: 20px;
+// }
+
+/* Управляйте левой стороной */
+.left {
+  left: 0;
+  background-color: #111;
+}
+
+/* Контролируйте правую сторону */
+.right {
+  right: 0;
+  background-color: red;
+}
+
+/* Если вы хотите, чтобы содержимое располагалось по центру по горизонтали и вертикали */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Style the image inside the centered container, if needed */
+.centered img {
+  width: 150px;
+  /* height: 150px; */
+  border-radius: 50%;
+  object-fit: cover;
+}
+//========================================================================================================================================================
+.about-page {
+  // padding-top: rem(148);
+  // padding-bottom: rem(148);
+  // .about-page__container
+  &__container {
+    position: relative; //вставляем декор справа
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100vw;
+      height: 100%;
+      left: 50%;
+      top: 0%;
+      transform: translate(-100%, 0%); /* -65.9%, 00% */
+      background-color: rgba(16, 12, 70, 0.8);
+      background-color: #100C46;
+      z-index: 4;
+      @media (max-width: rem(992)){
+          left: 100%;
+      }
+      // @media (max-width: $tablet) {
+      //   right: rem(185);
+      // }
+      // @media (max-width: $mobile) {
+      //   display: none;
+      // }
+    }
+  }
+  // .about-page__content
+  &__content {
+  }
+  // .about-page__body
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: rem(61);
+    @media (max-width: rem(992)){
+      flex-direction: column;
+    }
+  }
+  // .about-page__desc
+  &__desc {
+    flex: 0 0 37.48%;
+    width: rem(476);
+    width: 100%;
+    z-index: 5;
+    @media (max-width: rem(992)){
+      flex: 0 1 100%;
+    }
+  }
+  // .about-page__info
+  &__info {
+  }
+  // .about-page__subtitle
+  &__subtitle {
+    text-align: left;
+    @media (max-width: rem(992)){
+      padding-top: rem(50); 
+    }
+  }
+  // .about-page__title
+  &__title {
+    color: rgba(98, 87, 254, 1);
+  }
+  // .about-page__text
+  &__text {
+    margin-top: rem(30);
+    font-size: rem(20);
+    line-height: 160%; /* 32/20 */
+    color: rgba(255, 255, 255, 0.8);
+    // color: #000;
+    p {
+      &:not(:last-child) {
+        margin-bottom: rem(20);
+      }
+    }
+  }
+  // .about-page__image
+  &__image {
+    flex: 0 1 58.89%;
+    z-index: 5;
+    padding-top: rem(148);
+    padding-bottom: 11.653543%; /* 148/1270 */
+    @media (max-width: rem(992)){
+      padding-bottom: rem(50); 
+      padding-top: rem(0);
+      margin-top: rem(-25);
+    }
+  }
+  // .about-page__agency
+  &__agency {
+    filter: drop-shadow(0px 10px 50px rgba(16, 12, 70, 0.2));
+    width: 100%;
+    height: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+//========================================================================================================================================================
+//========================================================================================================================================================
+.services {
+  //background-color: #cef9ec;
+  // padding-top: rem(166);
+  //padding-bottom: rem(72);
+  // .services__container
+  &__container {
+    position: relative; //вставляем декор справа
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100vw;
+      height: 100%;
+      right: 40.15748%; /* 510/1270 */
+      top: 0%;
+      transform: translate(100%, 0%);
+      background-color: rgba(98, 87, 254, 1);
+      z-index: 0;
+      @media (max-width: $tablet) {
+        right: rem(185);
+        border-radius: rem(20) 0 0 rem(20);
+      }
+      @media (max-width: $mobile) {
+        display: none;
+      }
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100vw;
+      height: 100%;
+      right: 40.15748%; /* 510/1270 */
+      top: 0%;
+      transform: translate(100%, 0%);
+      background-color: rgba(98, 87, 254, 0.3);
+      z-index: 0;
+      @media (max-width: $tablet) {
+        right: rem(185);
+        border-radius: rem(20) 0 0 rem(20);
+      }
+      @media (max-width: $mobile) {
+        display: none;
+      }
+    }
+  }
+  // .services__content
+  &__content {
+  }
+  // .services__body
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: rem(40);
+    //align-items: start;
+    @media (max-width: $tablet) {
+      display: block;
+      //flex-direction: column-reverse; // чтобы фото ушло вниз
+      //align-items: stretch;
+    }
+  }
+  // .services__card
+  &__card {
+    flex: 0 0 51.65%;
+  }
+  // .services__image
+  &__images {
+    flex: 0 1 48.35%;
+    //max-width: (574);
+    position: relative;
+    // img {
+    //   max-width: 100%;
+    //   margin: 0 rem(30) 0 0;
+    // }
+    // @media (max-width: $tablet) {
+    //   flex: 1 1 100%;
+    //   text-align: center;
+    //   margin-bottom: rem(30);
+    //   //margin: 0;
+    // }
+    // @media (max-width: $mobile) {
+    //   flex: 1 1 100%;
+    //   text-align: center;
+    //   margin-bottom: rem(30);
+    //   //margin: 0;
+    // }
+  }
+}
+
+.servic {
+  padding-top: 9.370079%; /* 119/1270 */
+  padding-bottom: 67/1270; /* 72/1270 */
+  //background: #fdf6bc;
+  &__info {
+    max-width: rem(332);
+    text-align-last: left;
+    &:not(:last-child) {
+      margin-bottom: rem(14);
+    }
+  }
+  &__subtitle {
+    &:not(:last-child) {
+      margin-bottom: rem(7);
+    }
+  }
+  // .services__title
+  &__title {
+  }
+  // .servic__row
+  &__row {
+    margin: 0 rem(-15);
+    display: flex;
+    /*здесь задаются свойства колонок */
+    margin: 0 rem(-31.5);
+    /*добавим отступ между колонками ?*/
+    flex-wrap: wrap;
+    row-gap: rem(63);
+    @media (max-width: $tablet) {
+      row-gap: rem(50);
+    }
+    @media (max-width: $mobile) {
+      row-gap: rem(40);
+    }
+  }
+  // .servic__column
+  &__column {
+    display: flex;
+    padding: 0px 31.5px;
+    flex: 0 1 50%;
+    @media (max-width: $tablet) {
+      lex: 0 1 50%;
+    }
+    @media (max-width: $mobile) {
+      flex: 0 1 100%;
+    }
+  }
+
+  // .servic__item
+  &__item {
+    width: 100%;
+    //background-color: #ffffff;
+    /*закрашиваем карточку*/
+    color: grey;
+    /*чтобы ниже кнопки был промежуток*/
+    display: flex;
+    /*эти две строки чтобы прибить кнопку к низу и еще позволим блоку с текстом увеличиваться flex: 1 1 auto*/
+    flex-direction: column;
+    /*переворачиваем все элементы*/
+    position: relative;
+  }
+  // .servic__icon
+  &__icon {
+    &:not(:last-child) {
+      margin-bottom: rem(14);
+    }
+  }
+  // .servic__name
+  &__name {
+    font-size: rem(22);
+    line-height: 145.45%; /* 32/22 */
+    color: #100c46;
+    font-weight: 600;
+    padding-left: rem(89);
+    @media (max-width: rem(1200)) {
+      padding-left: rem(0);
+    }
+    @media (max-width: rem(992)) {
+      padding-left: rem(89);
+    }
+    &:not(:last-child) {
+      margin-bottom: rem(22);
+    }
+    & span {
+      position: relative;
+      &::before {
+        content: "";
+        display: block;
+        width: rem(77);
+        position: absolute;
+        border-bottom: 1px solid #100c46;
+        top: 50%;
+        left: -89px;
+        margin-right: rem(12);
+        @media (max-width: rem(1200)) {
+          width: rem(0);
+        }
+        @media (max-width: rem(992)) {
+          width: rem(77);
+        }
+      }
+    }
+  }
+  // .servic__text
+  &__text {
+    font-size: rem(20);
+    line-height: 160%; /* 32/20 */
+    color: rgba(16, 12, 70, 0.8);
+  }
+}
+
+.images {
+  position: relative;
+  &__human {
+    max-width: rem(427);
+    height: auto;
+    // position: relative;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  // .images__mobile
+  &__mobile {
+    //flex: rem(342);
+    width: rem(342);
+    height: auto;
+    position: absolute;
+    top: 180px;
+    left: 290px;
+    z-index: 2;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+// финиш services
+//================================================
+//========================================================================================================================================================
 //========================================================================================================================================================
 .portfolio-page {
-  padding-top: 5.748031%; /* 73/1270 */
-  padding-bottom: 6.850394%; /* 87/1270 */
+  padding-top: 5.669291%; /* 72/1270 */
+  padding-bottom: 4.96063%; /* 63/1270 */
   // .portfolio-page__container
   &__container {
   }
@@ -22,6 +415,7 @@
   }
   // .portfolio-page__title
   &__title {
+    text-align: center;
     &:not(:last-child) {
       margin-bottom: 6.062992%; /* 77/1270 */
     }
@@ -65,7 +459,7 @@
 //========================================================================================================================================================
 //========================================================================================================================================================
 .team-page {
-  padding-top: 5.748031%; /* 73/1270 */
+  padding-top: 3.858268%; /* 49/1270 */
   padding-bottom: 6.850394%; /* 87/1270 */
   // .team-page__container
   &__container {
@@ -75,6 +469,7 @@
   }
   // .team-page__title
   &__title {
+    text-align: center;
     &:not(:last-child) {
       margin-bottom: 6.062992%; /* 77/1270 */
     }
@@ -174,44 +569,5 @@
 }
 
 //========================================================================================================================================================
-.cards {
-  margin: 0px 0 70px 0;
-}
-.cards__row {
-  margin: 0px -15px 70px -15px;
-  display: flex;
-  flex-wrap: wrap;
-  row-gap: 24px;
-}
-.cards__column {
-  flex: 0 1 33.333%;
-  padding: 0px 15px;
-  @media (max-width: $tablet) {
-    flex: 0 1 50%;
-  }
-  @media (max-width: $mobile) {
-    flex: 0 1 100%;
-  }
-}
-.cards__item {
-}
 
-/* Контейнер картинки */
-.cards__image {
-  margin: 0px 0px 20px 0px;
-  padding: 0px 0px 58% 0px;
-  overflow: hidden;
-  position: relative;
-}
-/* Картинка */
-.cards__image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.cards__body {
-}
 //========================================================================================================================================================
