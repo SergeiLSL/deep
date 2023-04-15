@@ -1,123 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-  @@include('html/_head.htm',{ "title":"HomePage" })
-  <body>
-    <div class="wrapper">
+@@include('html/_head.htm',{ "title":"HomePage" })
+
+<body>
+   <div class="wrapper">
       @@include('html/_header.htm',{})
       <main class="page">
 
-        <section class="page__about about-page">
-          <div class="about-page__container">
-            <div class="about-page__content">
-              <div class="about-page__body">
-                <div class="about-page__desc">
-                  <div class="about-page__info">
-                    <div class="about-page__subtitle subtitle">Who we are</div>
-                    <h2 class="about-page__title title">About Agency</h2>
+         <section class="page__about about-page">
+            <div class="about-page__container">
+               <div class="about-page__content">
+                  <div class="about-page__body">
+                     <div class="about-page__desc">
+                        <div class="about-page__info">
+                           <div class="about-page__subtitle subtitle">Who we are</div>
+                           <h2 class="about-page__title title">About Agency</h2>
+                        </div>
+                        <div class="about-page__text">
+                           <p>
+                              Our company philosophy is to create the kind of website
+                              that most business want: easy to find, stylish and
+                              applealing, quick loading, mobile responsive and easy to
+                              buy from.
+                           </p>
+                           <p>
+                              Trained as industrial designers, we’ve a deep
+                              rooted belief in rational function and sustainable
+                              aesthetics. Our methodical approach is focused on
+                              revealing the essence of each design challenge to allow us
+                              to create holistic and durable solutions.
+                           </p>
+                        </div>
+                     </div>
+                     <div class="about-page__image">
+                        <div class="about-page__agency">
+                           <img src="@img/about/agency.jpg" alt="office" />
+                        </div>
+                     </div>
                   </div>
-                  <div class="about-page__text">
-                    <p>
-                      Our company philosophy is to create the kind of website
-                      that most business want: easy to find, stylish and
-                      applealing, quick loading, mobile responsive and easy to
-                      buy from.
-                    </p>
-                    <p>
-                      Trained as industrial designers, we’ve a deep
-                      rooted belief in rational function and sustainable
-                      aesthetics. Our methodical approach is focused on
-                      revealing the essence of each design challenge to allow us
-                      to create holistic and durable solutions.
-                    </p>
-                  </div>
-                </div>
-                <div class="about-page__image">
-                  <div class="about-page__agency">
-                    <img src="@img/agency/agency.jpg" alt="office" />
-                  </div>
-                </div>
-              </div>
+               </div>
             </div>
-          </div>
-        </section>
+         </section>
 
-        <section class="page__services services">
-          <div class="services__container">
-            <div class="services__content">
-              <div class="services__body">
-                <div class="services__card servic">
-                  <div class="servic__info">
-                    <div class="servic__subtitle subtitle">What we do</div>
-                    <h2 class="servic__title title">Our Services</h2>
-                  </div>
-                  <div class="servic__row row">
-                    <!--будущий flex-контейнер-->
-                    <div class="servic__column column">
-                      <!--колонки-->
-                      <div class="servic__item">
-                        <!--создаем саму карточку flex-элемент-->
-                        <div class="servic__icon">
-                          <img src="img/services/01.svg" alt="icon" />
+         <section class="page__services services">
+            <div class="services__container">
+               <div class="services__content">
+                  <div class="services__body">
+                     <div class="services__card servic">
+                        <div class="servic__info">
+                           <div class="servic__subtitle subtitle">What we do</div>
+                           <h2 class="servic__title title">Our Services</h2>
                         </div>
-                        <div class="servic__name">
-                          <span>Online Marketing</span>
+                        <div class="servic__row row">
+                           <!--будущий flex-контейнер-->
+                           <div class="servic__column column">
+                              <!--колонки-->
+                              <div class="servic__item">
+                                 <!--создаем саму карточку flex-элемент-->
+                                 <div class="servic__icon">
+                                    <img src="img/services/01.svg" alt="icon" />
+                                 </div>
+                                 <div class="servic__name">
+                                    <span>Online Marketing</span>
+                                 </div>
+                                 <div class="servic__text">
+                                    The internet has transformed business marketing. It is
+                                    the heart of our company.
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="servic__column column">
+                              <!--колонки-->
+                              <div class="servic__item">
+                                 <!--создаем саму карточку flex-элемент-->
+                                 <div class="servic__icon">
+                                    <img src="img/services/02.svg" alt="icon" />
+                                 </div>
+                                 <div class="servic__name">
+                                    <span>Web Development</span>
+                                 </div>
+                                 <div class="servic__text">
+                                    Web development is the work involved in developing a
+                                    Web site for the Internet.
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="servic__column column">
+                              <!--колонки-->
+                              <div class="servic__item">
+                                 <!--создаем саму карточку flex-элемент-->
+                                 <div class="servic__icon">
+                                    <img src="img/services/03.svg" alt="icon" />
+                                 </div>
+                                 <div class="servic__name"><span>Web design</span></div>
+                                 <div class="servic__text">
+                                    Web design refers to the design of websites that are
+                                    displayed on the internet.
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="servic__column column">
+                              <!--колонки-->
+                              <div class="servic__item">
+                                 <!--создаем саму карточку flex-элемент-->
+                                 <div class="servic__icon">
+                                    <img src="img/services/04.svg" alt="icon" />
+                                 </div>
+                                 <div class="servic__name">
+                                    <span>SEO Optimization</span>
+                                 </div>
+                                 <div class="servic__text">
+                                    SEO is the process of improving the quality and
+                                    quantity of website traffic to a website.
+                                 </div>
+                              </div>
+                           </div>
                         </div>
-                        <div class="servic__text">
-                          The internet has transformed business marketing. It is
-                          the heart of our company.
-                        </div>
-                      </div>
-                    </div>
-                    <div class="servic__column column">
-                      <!--колонки-->
-                      <div class="servic__item">
-                        <!--создаем саму карточку flex-элемент-->
-                        <div class="servic__icon">
-                          <img src="img/services/02.svg" alt="icon" />
-                        </div>
-                        <div class="servic__name">
-                          <span>Web Development</span>
-                        </div>
-                        <div class="servic__text">
-                          Web development is the work involved in developing a
-                          Web site for the Internet.
-                        </div>
-                      </div>
-                    </div>
-                    <div class="servic__column column">
-                      <!--колонки-->
-                      <div class="servic__item">
-                        <!--создаем саму карточку flex-элемент-->
-                        <div class="servic__icon">
-                          <img src="img/services/03.svg" alt="icon" />
-                        </div>
-                        <div class="servic__name"><span>Web design</span></div>
-                        <div class="servic__text">
-                          Web design refers to the design of websites that are
-                          displayed on the internet.
-                        </div>
-                      </div>
-                    </div>
-                    <div class="servic__column column">
-                      <!--колонки-->
-                      <div class="servic__item">
-                        <!--создаем саму карточку flex-элемент-->
-                        <div class="servic__icon">
-                          <img src="img/services/04.svg" alt="icon" />
-                        </div>
-                        <div class="servic__name">
-                          <span>SEO Optimization</span>
-                        </div>
-                        <div class="servic__text">
-                          SEO is the process of improving the quality and
-                          quantity of website traffic to a website.
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                     </div>
 
-                <!-- <div class="services__images images">
+                     <!-- <div class="services__images images">
                   <div class="images__human">
                     <img src="@img/services/human.jpg" alt="Человек">
                     <div class="images__mobile">
@@ -126,155 +127,322 @@
                   </div>
                 </div> -->
 
-                <div class="services__images images">
-                  <div class="images__human">
-                    <img src="@img/services/human.jpg" alt="Человек" />
+                     <div class="services__images images">
+                        <div class="images__human">
+                           <img src="@img/services/human.jpg" alt="Человек" />
+                        </div>
+                        <div class="images__mobile">
+                           <img src="@img/services/mobile.svg" />
+                        </div>
+                     </div>
                   </div>
-                  <div class="images__mobile">
-                    <img src="@img/services/mobile.svg" />
-                  </div>
-                </div>
-              </div>
+               </div>
             </div>
-          </div>
-        </section>
+         </section>
 
-        <section class="page__portfolio portfolio-page">
-          <div class="portfolio-page__container">
-            <div class="portfolio-page__subtitle subtitle">Our works</div>
-            <div class="portfolio-page__title title">Portfolio</div>
-            <div class="portfolio-page__row">
-              <div class="portfolio-page__column">
-                <div class="portfolio-page__work">
-                  <img src="@img/portfolio/01.jpg" alt="Image" />
-                </div>
-              </div>
-              <div class="portfolio-page__column">
-                <div class="portfolio-page__work">
-                  <img src="@img/portfolio/02.jpg" alt="Image" />
-                </div>
-              </div>
-              <div class="portfolio-page__column">
-                <div class="portfolio-page__work">
-                  <img src="@img/portfolio/03.jpg" alt="Image" />
-                </div>
-              </div>
-              <div class="portfolio-page__column">
-                <div class="portfolio-page__work">
-                  <img src="@img/portfolio/04.jpg" alt="Image" />
-                </div>
-              </div>
+         <section class="page__portfolio portfolio-page">
+            <div class="portfolio-page__container">
+               <div class="portfolio-page__subtitle subtitle">Our works</div>
+               <div class="portfolio-page__title title">Portfolio</div>
+               <div class="portfolio-page__row">
+                  <div class="portfolio-page__column">
+                     <div class="portfolio-page__work">
+                        <img src="@img/portfolio/01.jpg" alt="Image" />
+                     </div>
+                  </div>
+                  <div class="portfolio-page__column">
+                     <div class="portfolio-page__work">
+                        <img src="@img/portfolio/02.jpg" alt="Image" />
+                     </div>
+                  </div>
+                  <div class="portfolio-page__column">
+                     <div class="portfolio-page__work">
+                        <img src="@img/portfolio/03.jpg" alt="Image" />
+                     </div>
+                  </div>
+                  <div class="portfolio-page__column">
+                     <div class="portfolio-page__work">
+                        <img src="@img/portfolio/04.jpg" alt="Image" />
+                     </div>
+                  </div>
+               </div>
             </div>
-          </div>
-        </section>
+         </section>
 
-        <section class="page__team team-page">
-          <div class="team-page__container">
-            <div class="team-page__subtitle subtitle">Meet the staff</div>
-            <h2 class="team-page__title title">Our Team</h2>
-            <div class="team-page__row">
-              <div class="team-page__column">
-                <div class="team-page__item card">
-                  <div class="card__image">
-                    <img src="@img/team/01.jpg" alt="Image" />
+         <section class="page__team team-page">
+            <div class="team-page__container">
+               <div class="team-page__subtitle subtitle">Meet the staff</div>
+               <h2 class="team-page__title title">Our Team</h2>
+               <div class="team-page__row">
+                  <div class="team-page__column">
+                     <div class="team-page__item card">
+                        <div class="card__image">
+                           <img src="@img/team/01.jpg" alt="Image" />
+                        </div>
+                        <div class="card__body">
+                           <div class="card__info">
+                              <div class="card__name">Malavika Hegte</div>
+                              <div class="card__speciality">Digital Marketer</div>
+                           </div>
+                           <div class="card__social">
+                              <a href="" class="card__icon">
+                                 <img src="@img/team/facebook.svg" alt="facebook" />
+                              </a>
+                              <a href="" class="card__icon">
+                                 <img src="@img/team/twitter.svg" alt="twitter" />
+                              </a>
+                              <a href="" class="card__icon">
+                                 <img src="@img/team/instagram.svg" alt="instagram" />
+                              </a>
+                           </div>
+                        </div>
+                     </div>
                   </div>
-                  <div class="card__body">
-                    <div class="card__info">
-                      <div class="card__name">Malavika Hegte</div>
-                      <div class="card__speciality">Digital Marketer</div>
-                    </div>
-                    <div class="card__social">
-                      <a href="" class="card__icon">
-                        <img src="@img/team/facebook.svg" alt="facebook" />
-                      </a>
-                      <a href="" class="card__icon">
-                        <img src="@img/team/twitter.svg" alt="twitter" />
-                      </a>
-                      <a href="" class="card__icon">
-                        <img src="@img/team/instagram.svg" alt="instagram" />
-                      </a>
-                    </div>
+                  <div class="team-page__column">
+                     <div class="team-page__item card">
+                        <div class="card__image">
+                           <img src="@img/team/02.jpg" alt="Image" />
+                        </div>
+                        <div class="card__body">
+                           <div class="card__info">
+                              <div class="card__name">Choudri Malhotra</div>
+                              <div class="card__speciality">UI Designer</div>
+                           </div>
+                           <div class="card__social">
+                              <a href="" class="card__icon">
+                                 <img src="@img/team/facebook.svg" alt="facebook" />
+                              </a>
+                              <a href="" class="card__icon">
+                                 <img src="@img/team/twitter.svg" alt="twitter" />
+                              </a>
+                              <a href="" class="card__icon">
+                                 <img src="@img/team/instagram.svg" alt="instagram" />
+                              </a>
+                           </div>
+                        </div>
+                     </div>
                   </div>
-                </div>
-              </div>
-              <div class="team-page__column">
-                <div class="team-page__item card">
-                  <div class="card__image">
-                    <img src="@img/team/02.jpg" alt="Image" />
+                  <div class="team-page__column">
+                     <div class="team-page__item card">
+                        <div class="card__image">
+                           <img src="@img/team/03.jpg" alt="Image" />
+                        </div>
+                        <div class="card__body">
+                           <div class="card__info">
+                              <div class="card__name">Malavika Hegte</div>
+                              <div class="card__speciality">Digital Marketer</div>
+                           </div>
+                           <div class="card__social">
+                              <a href="" class="card__icon">
+                                 <img src="@img/team/facebook.svg" alt="facebook" />
+                              </a>
+                              <a href="" class="card__icon">
+                                 <img src="@img/team/twitter.svg" alt="twitter" />
+                              </a>
+                              <a href="" class="card__icon">
+                                 <img src="@img/team/instagram.svg" alt="instagram" />
+                              </a>
+                           </div>
+                        </div>
+                     </div>
                   </div>
-                  <div class="card__body">
-                    <div class="card__info">
-                      <div class="card__name">Choudri Malhotra</div>
-                      <div class="card__speciality">UI Designer</div>
-                    </div>
-                    <div class="card__social">
-                      <a href="" class="card__icon">
-                        <img src="@img/team/facebook.svg" alt="facebook" />
-                      </a>
-                      <a href="" class="card__icon">
-                        <img src="@img/team/twitter.svg" alt="twitter" />
-                      </a>
-                      <a href="" class="card__icon">
-                        <img src="@img/team/instagram.svg" alt="instagram" />
-                      </a>
-                    </div>
+                  <div class="team-page__column">
+                     <div class="team-page__item card">
+                        <div class="card__image">
+                           <img src="@img/team/04.jpg" alt="Image" />
+                        </div>
+                        <div class="card__body">
+                           <div class="card__info">
+                              <div class="card__name">Anirudh Vedha</div>
+                              <div class="card__speciality">Lead Developer</div>
+                           </div>
+                           <div class="card__social">
+                              <a href="" class="card__icon">
+                                 <img src="@img/team/facebook.svg" alt="facebook" />
+                              </a>
+                              <a href="" class="card__icon">
+                                 <img src="@img/team/twitter.svg" alt="twitter" />
+                              </a>
+                              <a href="" class="card__icon">
+                                 <img src="@img/team/instagram.svg" alt="instagram" />
+                              </a>
+                           </div>
+                        </div>
+                     </div>
                   </div>
-                </div>
-              </div>
-              <div class="team-page__column">
-                <div class="team-page__item card">
-                  <div class="card__image">
-                    <img src="@img/team/03.jpg" alt="Image" />
-                  </div>
-                  <div class="card__body">
-                    <div class="card__info">
-                      <div class="card__name">Malavika Hegte</div>
-                      <div class="card__speciality">Digital Marketer</div>
-                    </div>
-                    <div class="card__social">
-                      <a href="" class="card__icon">
-                        <img src="@img/team/facebook.svg" alt="facebook" />
-                      </a>
-                      <a href="" class="card__icon">
-                        <img src="@img/team/twitter.svg" alt="twitter" />
-                      </a>
-                      <a href="" class="card__icon">
-                        <img src="@img/team/instagram.svg" alt="instagram" />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="team-page__column">
-                <div class="team-page__item card">
-                  <div class="card__image">
-                    <img src="@img/team/04.jpg" alt="Image" />
-                  </div>
-                  <div class="card__body">
-                    <div class="card__info">
-                      <div class="card__name">Anirudh Vedha</div>
-                      <div class="card__speciality">Lead Developer</div>
-                    </div>
-                    <div class="card__social">
-                      <a href="" class="card__icon">
-                        <img src="@img/team/facebook.svg" alt="facebook" />
-                      </a>
-                      <a href="" class="card__icon">
-                        <img src="@img/team/twitter.svg" alt="twitter" />
-                      </a>
-                      <a href="" class="card__icon">
-                        <img src="@img/team/instagram.svg" alt="instagram" />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
+               </div>
             </div>
+         </section>
+
+         <!-- <section class="page__contact contact-page">
+          <div class="contact-page__container">
+            <section class="contact-page__contacts contacts">
+              <div class="contacts__content">
+                <h1 class="contacts__title">Get in <span>Touch</span></h1>
+                <div class="contacts__text">
+                  <p>
+                    Enim tempor eget pharetra facilisis sed maecenas adipiscing. Eu leo molestie vel, ornare non id blandit netus.
+                  </p>
+                </div>
+                <form action="#" class="contacts__form form">
+                  <div class="form__line">
+                    <input required id="i-1" type="text" class="form__input" name="name">
+                    <label for="i-1" class="form__label">Name <span>*</span></label>
+                  </div>
+                  <div class="form__line">
+                    <input id="i-2" type="email" class="form__input" name="email">
+                    <label for="i-2" class="form__label">Email</label>
+                  </div>
+                  <div class="form__line">
+                    <input required id="i-3" type="tel" class="form__input" name="phone">
+                    <label for="i-3" class="form__label">Phone number <span>*</span></label>
+                  </div>
+                  <div class="form__line">
+                    <input id="i-4" type="text" class="form__input" name="message">
+                    <label for="i-4" class="form__label">How did you find us?</label>
+                  </div>
+                  <div class="form__line">
+                    <button type="submit" class="form__button">send</button>
+                  </div>
+                </form>
+                <div class="contacts__info info-contacts">
+                  <div class="info-contacts__item">
+                    <div class="info-contacts__icon">
+                      <img src="img/icons/01.svg" alt="Icon">
+                    </div>
+                    <div class="info-contacts__body">
+                      <div class="info-contacts__title">PHONE</div>
+                      <a href="tel:0354321234" class="info-contacts__value">03 5432 1234</a>
+                    </div>
+                  </div>
+                  <div class="info-contacts__item">
+                    <div class="info-contacts__icon">
+                      <img src="img/icons/02.svg" alt="Icon">
+                    </div>
+                    <div class="info-contacts__body">
+                      <div class="info-contacts__title">FAX</div>
+                      <a href="tel:0354321234" class="info-contacts__value">03 5432 1234</a>
+                    </div>
+                  </div>
+                  <div class="info-contacts__item">
+                    <div class="info-contacts__icon">
+                      <img src="img/icons/03.svg" alt="Icon">
+                    </div>
+                    <div class="info-contacts__body">
+                      <div class="info-contacts__title">EMAIL</div>
+                      <a href="mailto:info@marcc.com.au" class="info-contacts__value">info@marcc.com.au</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="contacts__map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d236646.63823691342!2d-79.12845197422516!3d22.064749335360755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sua!4v1674549285679!5m2!1sen!2sua" width="600" height="450" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </section>
           </div>
-        </section>
+        </section> -->
+
+         <section class="page__contact contact-page">
+            <div class="contact-page__container">
+               <div class="contact-page__contacts">
+                  <div class="contact-page__content content">
+                     <div class="content__subtitle subtitle">Keep in touch</div>
+                     <h2 class="content__title title">Contact us</h2>
+
+                     <form action="#" class="content__form form">
+                        <div class="form__line">
+                           <input required id="i-1" type="text" class="form__input" name="name" />
+                           <label for="i-1" class="form__label">Name</label>
+                        </div>
+                        <div class="form__line">
+                           <input id="i-2" type="email" class="form__input" name="email" />
+                           <label for="i-2" class="form__label">Email</label>
+                        </div>
+                        <div class="form__line">
+                           <input required id="i-3" type="text" class="form__input" name="text" />
+                           <label for="i-3" class="form__label">Subject</label>
+                        </div>
+                        <div class="form__line">
+                           <input id="i-4" type="aria" class="form__input" name="message" />
+                           <label for="i-4" class="form__label">Subject</label>
+                        </div>
+                        <div class="form__line">
+                           <button type="submit" class="form__button">
+                              Get Started
+                           </button>
+                        </div>
+                     </form>
+                  </div>
+
+                  <div class="contact-page__adress adress">
+                     <div class="adress__row">
+                        <div class="adress__map">
+                           <img src="img/contact/map.png" alt="">
+                           <!-- <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d236646.63823691342!2d-79.12845197422516!3d22.064749335360755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sua!4v1674549285679!5m2!1sen!2sua"
+                      width="553"
+                      height="617"
+                      style="border: 0"
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe> -->
+                        </div>
+                        <div class="adress__social">
+                           <div class="adress__info info-contacts">
+
+                              <div class="info-contacts__item">
+                                 <div class="info-contacts__icon">
+                                    <span>
+                                       <img src="img/contact/phone.svg" alt="Icon" />
+                                    </span>
+                                    <span>PHONE</span>
+                                 </div>
+
+                                 <div class="info-contacts__body">
+                                    <a href="tel:0354321234" class="info-contacts__value">+91 88995 56645 04288 569
+                                       896</a>
+                                 </div>
+                              </div>
+
+                              <div class="info-contacts__item">
+                                 <div class="info-contacts__box">
+                                    <div class="info-contacts__icon">
+                                       <span>
+                                          <img src="img/contact/email.svg" alt="Icon" />
+                                       </span>
+                                       <span>EMAIL</span>
+                                    </div>
+                                    <div class="info-contacts__body">
+                                       <a href="marc56@marc.com" class="info-contacts__value">marc56@marc.com
+                                       </a>
+                                    </div>
+                                 </div>
+                              </div>
+
+                              <div class="info-contacts__item">
+                                 <div class="info-contacts__icon">
+                                    <span>
+                                       <img src="img/contact/location.svg" alt="Icon" />
+                                    </span>
+                                    <span>Address</span>
+                                 </div>
+                                 <div class="info-contacts__body">
+                                    <a href="mailto:info@marcc.com.au" class="info-contacts__value">25, 5th Cross
+                                       Street, Bhommana Halli, Bangalore -
+                                       785 956</a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
       </main>
       @@include('html/_footer.htm',{})
-    </div>
-    @@include('html/_js.htm',{})
-  </body>
+   </div>
+   @@include('html/_js.htm',{})
+</body>
+
 </html>
