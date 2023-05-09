@@ -268,7 +268,7 @@
 
 .servic {
    padding-top: 9.370079%; /* 119/1270 */
-   padding-bottom: 67/1270; /* 72/1270 */
+   padding-bottom: 5.275591%; /* 67/1270 */
    //background: #fdf6bc;
    &__info {
       max-width: rem(332);
@@ -415,6 +415,9 @@
 .portfolio-page {
    padding-top: 5.669291%; /* 72/1270 */
    padding-bottom: 4.96063%; /* 63/1270 */
+   @media (max-width:$tablet){
+      padding-top: 15%;
+   }
    // .portfolio-page__container
    &__container {
    }
